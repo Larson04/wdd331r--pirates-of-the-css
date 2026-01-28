@@ -1,12 +1,12 @@
 html {
     /* Light (base) theme variables - TERRIBLE COLORS */
-    --bg-clr: #ffff00;
-    --text-clr: #ff00ff;
-    --heading-clr: #00ff00;
+    --bg-clr: #FEFEE3;
+    --text-clr: #4A6670;
+    --heading-clr: #428b96;
     
-    --primary-clr: #ff0000;
-    --secondary-clr: #00ffff;
-    --accent-clr: #ffa500;
+    --primary-clr: #87BCDE;
+    --secondary-clr: #4DA167;
+    --accent-clr: #E4C3AD;
     
     --link-clr: #ff1493;
     --link-hover-clr: #32cd32;
