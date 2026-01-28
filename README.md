@@ -21,12 +21,12 @@ The project currently has:
 
 **TODO: Add your team members here**
 
-- Team Member 1 - Task Assignment
-- Team Member 2 - Task Assignment
-- Team Member 3 - Task Assignment
-- Team Member 4 - Task Assignment
-- Team Member 5 - Task Assignment
-- Team Member 6 - Task Assignment
+- Ruby Larson - Design System Foundation
+- Blaise Palombo - Typography System
+- Logan Maconnell - Layout Compositions
+- Faithful Olaye - Navigation and Structure Components
+- Yat Lam- Content Components
+-  - Form Components
 
 ## Task Assignments
 
