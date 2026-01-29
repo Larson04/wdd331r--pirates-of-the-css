@@ -7,3 +7,65 @@
  * - Link styles
  * - Responsive behavior
  */
+
+
+ /* FOOTER COMPONENT */
+/* Styles the site footer and quick links */
+.footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    padding: var(--spacing-lg) 0;
+
+    &__section {
+        margin-bottom: var(--spacing-med);
+    }
+
+    &__title {
+        font-size: var(--heading-md);
+        margin-bottom: var(--spacing-sm);
+        color: var(--text-clr);
+    }
+
+    &__subtitle {
+        font-size: var(--font-lg);
+        margin-bottom: var(--spacing-sm);
+    }
+
+    &__text {
+        font-size: var(--font-base);
+        line-height: 1.5;
+        margin: 0.25rem 0;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--text-clr);
+        transition: color 0.3s;
+        &:hover {
+            color: var(--primary-clr);
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+        font-size: var(--font-sm);
+        margin-top: var(--spacing-med);
+        color: var(--footer-text-muted);
+    }
+
+    /* Grid layout for sections */
+    .grid[data-layout="3-col"] {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: var(--spacing-med);
+    }
+}

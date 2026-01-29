@@ -7,3 +7,44 @@
  * - Active page indication
  * - Mobile responsive menu
  */
+ /* NAVIGATION COMPONENT */
+/* Styles the site navigation menu */
+.nav {
+    &__list {
+        list-style: none;
+        display: flex;
+        gap: var(--spacing-med);
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        & a {
+            text-decoration: none;
+            color: var(--text-clr);
+            font-weight: var(--font-medium);
+            padding: var(--spacing-sm) var(--spacing-med);
+            border-radius: var(--radius-sm);
+            transition: background 0.3s, color 0.3s;
+
+            &:hover,
+            &:focus {
+                background: var(--primary-clr);
+                color: var(--text-on-primary);
+            }
+
+            &[data-active] {
+                font-weight: var(--font-bold);
+                border-bottom: 2px solid var(--primary-clr);
+            }
+        }
+    }
+
+    /* Mobile fallback: stacked menu */
+    @media (max-width: 768px) {
+        &__list {
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+    }
+}

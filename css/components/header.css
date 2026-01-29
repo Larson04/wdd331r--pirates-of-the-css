@@ -7,3 +7,39 @@
  * - Theme toggle button
  * - Responsive behavior
  */
+ /*Header Testing
+ /* HEADER COMPONENT */
+/* Styles the site header and logo/branding */
+.header {
+    background: var(--bg-clr);
+    padding: var(--spacing-med) 0;
+    border-bottom: 1px solid var(--border-clr);
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: var(--container-width);
+        margin: 0 auto;
+        padding: 0 var(--spacing-med);
+    }
+    &__branding {
+        & h1 {
+            font-size: var(--heading-lg);
+            color: var(--text-clr);
+            margin: 0;
+        }
+    }
+    .theme-toggle {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: var(--font-size-lg);
+        color: var(--text-clr);
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        &:hover {
+            color: var(--primary-clr);
+        }
+    }
+}
