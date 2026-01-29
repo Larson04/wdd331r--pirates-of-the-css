@@ -37,7 +37,7 @@ html {
         --text-clr: #ff00ff;
         --heading-clr: #00ff00;
         
-        --primary-clr: #ff0000;
+        --primary-clr: #00ffff;
         --secondary-clr: #00ffff;
         --accent-clr: #ffa500;
         
@@ -72,7 +72,7 @@ html {
             --text-clr: #ff00ff;
             --heading-clr: #00ff00;
             
-            --primary-clr: #ff0000;
+            --primary-clr: #0ff;
             --secondary-clr: #00ffff;
             --accent-clr: #ffa500;
             
