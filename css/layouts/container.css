@@ -7,3 +7,22 @@
  * - Provides consistent padding
  * - Works responsively
  */
+.container {
+    max-width: 80%;
+    justify-self: center;
+}
+
+
+.header__content {
+    display: fgrid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__item {
+    padding: 20px;
+}

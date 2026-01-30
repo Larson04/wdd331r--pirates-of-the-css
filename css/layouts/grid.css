@@ -7,3 +7,14 @@
  * - Works across different screen sizes
  * - Provides consistent gaps
  */
+
+ .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+ }
+
+ .grid .card {
+    width: 500px;
+
+ }

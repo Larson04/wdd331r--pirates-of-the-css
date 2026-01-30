@@ -6,3 +6,9 @@
  * - Provides consistent spacing between elements
  * - Uses logical properties
  */
+
+ .stack {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+ }
