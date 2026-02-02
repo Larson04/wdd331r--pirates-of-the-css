@@ -9,7 +9,7 @@ html {
     --secondary-clr: #4DA167;
     --accent-clr: #E4C3AD;
     
-    --link-clr: var(--heading-clr);
+    --link-clr: color-mix(in srgb, var(--text-clr), var(--primary-clr) 50%) ;
     --link-hover-clr: color-mix(in srgb, var(--link-clr), black 20%);
     
     --border-clr: var(--text-clr);
@@ -43,7 +43,7 @@ html {
         --secondary-clr: color-mix(in srgb, #4DA167, black 20%);
         --accent-clr: #E4C3AD;
         
-        --link-clr: var(--heading-clr);
+        --link-clr: color-mix(in srgb, var(--text-clr), var(--primary-clr) 50%);
         --link-hover-clr: color-mix(in srgb, var(--link-clr), white 20%);
         
         --border-clr: var(--text-clr);
@@ -91,7 +91,7 @@ html {
             
             --button-bg-clr: var(--primary-clr);
             --button-text-clr: var(--text-clr);
-            --button-hover-bg-clr: color-mix(in srgb, var(--button-bg-clr), black 20%);
+            --button-hover-bg-clr: color-mix(in srgb, var(--button-bg-clr), white 20%);
             
             --card-bg-clr: var(--secondary-clr);
             --card-border-clr: var(--text-clr);
