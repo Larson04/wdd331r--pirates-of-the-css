@@ -3,9 +3,9 @@
  * 
  * TODO: Style form elements including:
  * - Input fields (text, email, etc.)
+ * - Labels
  * - Textareas
  * - Select dropdowns
- * - Labels
  * - Focus states
  * - Error and success states
  */
@@ -14,32 +14,25 @@
 FORM COMPONENTS
 ------------ */
 
- @import 'base/variables.css';
-  @import 'base/colors.css';
-
-.contact-form {
-    max-width: var(--content-max-width);
-    padding: 10px;
-}
+@import 'base/variables.css';
+@import 'base/colors.css';
 
 .contact-form {
     display: block;
+    padding: 10px;
     color: var(--text-clr);
+    max-width: var(--content-max-width);
     width: 100%;
-    
-    * {
+
+    * { /* Force all elements to use available width */
         display: block;
         width: 100%;
-    }
-
-    /* LABELS*/
-    label {
-        display: block;
     }
 
     /* INPUTS */
     :is(input, textarea, select, button) {
         background-color: transparent;
+        padding: 5px;
         min-height: 25px;
         border-radius: 10px;
         color: var(--text-clr);
@@ -48,6 +41,11 @@ FORM COMPONENTS
         &:placeholder-shown:required { /* For required fields; if they're empty, show red border */
         border: 1px solid red;
         }
+    }
+
+    /* LABELS*/
+    label {
+        display: block;
     }
 
     /* SUBMIT BUTTON */
