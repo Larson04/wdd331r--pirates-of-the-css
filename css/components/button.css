@@ -7,3 +7,35 @@
  * - Hover, focus, and active states
  * - Accessibility (focus indicators)
  */
+
+button, .button {
+  --button-text-color: ;
+  --button-background-color: ;
+  --button-font-size: ;
+  --button-border-radius: ;
+  --button-space-padding: ;
+  --button-space-margin: ;
+  border: none;
+  &:hover {
+
+  }
+  &:active {
+
+  }
+  &:focus {
+    
+  }
+}
+
+.theme-toggle {
+
+}
+
+.button {
+  &[data-variant="primary"] {
+
+  }
+  &[data-variant="secondary"] {
+
+  }
+}

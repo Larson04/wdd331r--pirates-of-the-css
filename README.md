@@ -57,6 +57,7 @@ The project currently has:
 
 ### Task 5: Content Components
 **Assigned to:** [Name]
+
 **Files to modify:**
 - `css/components/button.css`
 - `css/components/card.css`
