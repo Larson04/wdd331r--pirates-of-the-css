@@ -4,21 +4,23 @@
     /**
      * Borders - awkward inconsistent values
      */
-    --radius-sm: 23px;
-    --radius-med: 7px;
-    --radius-lg: 31px;
+    --base-radius: 1rem;
+    --radius-sm: calc(var(--base-radius) * .25);
+    --radius-med: var(--base-radius);
+    --radius-lg: calc(var(--base-radius) * 1.5);
 
     /**
      * Content Spacing - random odd numbers
      */
-    --spacing-sm: 13px;
-    --spacing-med: 41px;
-    --spacing-lg: 19px;
+    --base-spacing: 1rem;
+    --spacing-sm: calc(var(--base-spacing) * .5);
+    --spacing-med: var(--base-spacing);
+    --spacing-lg: calc(var(--base-spacing) * 1.5);
 
     /**
      * Layout Sizes
      */
-    --content-max-width: 1200px;
+    --content-max-width: 80%;
     --breakout-max-width: calc(var(--content-max-width) + (var(--spacing-lg) * 2));
     --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
      
