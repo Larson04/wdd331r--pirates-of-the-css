@@ -22,41 +22,41 @@ FORM COMPONENTS
     padding: 10px;
 }
 
-.form__group {
+.contact-form {
+    display: block;
     color: var(--text-clr);
     width: 100%;
-
-    display: block;
-
-    label {
-        display: block;
-    }
-
+    
     * {
         display: block;
         width: 100%;
     }
 
-    input, textarea, select, button {
-        
+    /* LABELS*/
+    label {
+        display: block;
     }
 
+    /* INPUTS */
     :is(input, textarea, select, button) {
         background-color: transparent;
         min-height: 25px;
         border-radius: 10px;
         color: var(--text-clr);
-    }
+        margin-bottom: 10px;
 
-    *:required {
+        &:required { /* For required fields */
         border: 1px solid red;
+        }
     }
 
-
+    /* SUBMIT BUTTON */
+    .button {
+        font-weight: bold;
+    }
 }
 
  /*
-
         <div class="grid" data-layout="2-col">
             <div class="contact-form">
                 <h2>Send Us a Message</h2>
