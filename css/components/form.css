@@ -15,6 +15,7 @@ FORM COMPONENTS
 ------------ */
 
  @import 'base/variables.css';
+  @import 'base/colors.css';
 
 .contact-form {
     max-width: var(--content-max-width);
@@ -22,6 +23,7 @@ FORM COMPONENTS
 }
 
 .form__group {
+    color: var(--text-clr);
     width: 100%;
 
     display: block;
@@ -35,9 +37,18 @@ FORM COMPONENTS
         width: 100%;
     }
 
+    input, textarea, select, button {
+        background-color: transparent;
+        min-height: 25px;
+        border-radius: 10px;
+        color: var(--text-clr);
+    }
+
     *:required {
         border: 1px solid red;
     }
+
+
 }
 
  /*
