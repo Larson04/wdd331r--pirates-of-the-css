@@ -19,51 +19,48 @@ The project currently has:
 
 ## Team Members
 
-**TODO: Add your team members here**
-
-- Team Member 1 - Task Assignment
-- Team Member 2 - Task Assignment
-- Team Member 3 - Task Assignment
-- Team Member 4 - Task Assignment
-- Team Member 5 - Task Assignment
-- Team Member 6 - Task Assignment
+- Ruby Larson - Design System Foundation
+- Blaise Palombo - Typography System
+- Logan Maconnell - Layout Compositions
+- Faithful Olaye - Navigation and Structure Components
+- Yat Lam - Content Components
+- Connor Butterfield - Form Components
 
 ## Task Assignments
 
 ### Task 1: Design System Foundation
-**Assigned to:** [Name]
+**Assigned to:** [Ruby Larson]
 **Files to modify:**
 - `css/base/colors.css`
 - `css/base/variables.css`
 
 ### Task 2: Typography System
-**Assigned to:** [Name]
+**Assigned to:** [Blaise Palombo]
 **Files to modify:**
 - `css/base/typography.css`
 
 ### Task 3: Layout Compositions
-**Assigned to:** [Name]
+**Assigned to:** [Logan Maconnell]
 **Files to modify:**
 - `css/layouts/container.css`
 - `css/layouts/grid.css`
 - `css/layouts/stack.css`
 
 ### Task 4: Navigation and Structure Components
-**Assigned to:** [Name]
+**Assigned to:** [Faithful Olaye]
 **Files to modify:**
 - `css/components/header.css`
 - `css/components/nav.css`
 - `css/components/footer.css`
 
 ### Task 5: Content Components
-**Assigned to:** [Name]
-
+**Assigned to:** [Yat Lam]
 **Files to modify:**
 - `css/components/button.css`
 - `css/components/card.css`
 
 ### Task 6: Form Components (Optional)
-**Assigned to:** [Name]
+**Assigned to:** [Connor Butterfield]
 **Files to modify:**
 - `css/components/form.css`
 

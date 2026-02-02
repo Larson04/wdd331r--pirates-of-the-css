@@ -7,3 +7,123 @@
  * - Theme toggle button
  * - Responsive behavior
  */
+ /* =========================
+   HEADER COMPONENT
+   ========================= */
+
+.header {
+    background: var(--bg-clr);
+    padding: var(--spacing-med) 0;
+    border-bottom: 1px solid var(--border-clr);
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-med);
+    gap: var(--spacing-med);
+}
+
+/* Branding / Logo */
+.header__branding h1 {
+    font-size: var(--heading-lg);
+    color: var(--text-clr);
+    margin: 0; 
+}
+
+/* NAVIGATION */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-med);
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: var(--text-clr);
+    font-weight: var(--font-medium);
+    padding: var(--spacing-sm) var(--spacing-med);
+    border-radius: var(--radius-sm);
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav__item a:hover,
+.nav__item a:focus {
+    background: var(--primary-clr);
+    color: var(--text-on-primary);
+}
+
+.nav__item a[data-active] {
+    font-weight: var(--font-bold);
+    border-bottom: 2px solid var(--primary-clr);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+    color: var(--text-clr);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.theme-toggle:hover {
+    color: var(--primary-clr);
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+@media (max-width: 768px) {
+    .header__content {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        width: 100%;
+    }
+
+    .nav__item a {
+        width: 100%;
+        text-align: left;
+        padding: var(--spacing-sm) var(--spacing-med);
+    }
+
+    .theme-toggle {
+        align-self: flex-end; 
+        margin-top: var(--spacing-sm);
+    }
+}
+.header__branding h1 {
+    font-size: var(--heading-lg);
+    color: var(--text-clr);
+    margin: 0;
+    padding: var(--spacing-sm) var(--spacing-med); 
+    border: 2px solid var(--primary-clr); 
+    border-radius: var(--radius-sm); 
+    background: var(--bg-accent); 
+}.header__branding h1 {
+    font-size: var(--heading-lg);
+    color: var(--text-clr);
+    margin: 0;
+    padding: var(--spacing-sm) var(--spacing-med); 
+    border: 2px solid var(--primary-clr); 
+    border-radius: var(--radius-sm); 
+    background: var(--bg-accent); 
+}
