@@ -38,6 +38,10 @@ FORM COMPONENTS
     }
 
     input, textarea, select, button {
+        
+    }
+
+    :is(input, textarea, select, button) {
         background-color: transparent;
         min-height: 25px;
         border-radius: 10px;
