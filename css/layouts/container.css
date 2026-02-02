@@ -7,22 +7,45 @@
  * - Provides consistent padding
  * - Works responsively
  */
-.container {
-    max-width: 80%;
+body {
+    width: calc(100vw - 100px);
     justify-self: center;
 }
 
-
 .header__content {
-    display: fgrid;
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    margin-top: 25px;
+
 }
+
+.header__branding {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.header__logo {
+    text-align: left
+}
+
+.nav {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.theme-toggle {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
 
 .nav__list {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
 .nav__item {
-    padding: 20px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
