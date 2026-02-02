@@ -1,10 +1,131 @@
-/* 
- * Typography System
- * 
- * TODO: Build complete typography system including:
- * - Heading styles (h1-h6)
- * - Body text styles
- * - Text utilities (lead, small, etc.)
- * - Link styles
- * - Inline elements (strong, em, code)
- */
+/* Typography (base layer) */
+
+:where(p) {
+  max-width: 65ch;
+}
+
+:where(p + p) {
+  margin-top: var(--spacing-sm);
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--heading-clr);
+  margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+:where(h1) { font-size: var(--font-size-xl); }
+:where(h2) { font-size: var(--font-size-lg); }
+:where(h3) { font-size: var(--font-size-med); }
+:where(h4) { font-size: var(--font-size-sm); }
+:where(h5) { font-size: var(--font-size-base); }
+:where(h6) { font-size: var(--font-size-xs); }
+
+:where(a) {
+  color: var(--link-clr);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.08em;
+
+  &:hover {
+    color: var(--link-hover-clr);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--link-hover-clr);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+  }
+}
+
+:where(strong) {
+  font-weight: var(--font-weight-bold);
+}
+
+:where(em) {
+  font-style: italic;
+}
+
+:where(ul, ol) {
+  padding-left: calc(var(--spacing-lg) + var(--spacing-sm));
+  margin-top: var(--spacing-sm);
+  margin-bottom: 0;
+}
+
+:where(li + li) {
+  margin-top: var(--spacing-sm);
+}
+
+:where(.footer__list) {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  & li + li {
+    margin-top: var(--spacing-sm);
+  }
+}
+
+:where(code, kbd) {
+  font-family: var(--font-family-mono);
+  font-size: 0.95em;
+  padding: 0.15em 0.35em;
+  border-radius: var(--radius-med);
+  border: 1px solid var(--border-clr);
+  background: color-mix(in srgb, var(--bg-clr), var(--text-clr) 6%);
+}
+
+:where(pre) {
+  font-family: var(--font-family-mono);
+  padding: var(--spacing-med);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-clr);
+  background: color-mix(in srgb, var(--bg-clr), var(--text-clr) 6%);
+  overflow-x: auto;
+  line-height: var(--line-height-base);
+
+  & code {
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+}
+
+:where(.lead),
+:where(.hero__subtitle) {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-loose);
+  margin-top: var(--spacing-sm);
+  max-width: 70ch;
+}
+
+:where(.section-title) {
+  font-size: var(--font-size-lg);
+}
+
+:where(.form__label) {
+  display: inline-block;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: calc(var(--spacing-sm) / 2);
+}
+
+:where(.form__group + .form__group) {
+  margin-top: var(--spacing-med);
+}
+
+@media (min-width: 48rem) {
+  :where(.lead, .hero__subtitle) {
+    font-size: var(--font-size-base);
+  }
+}
