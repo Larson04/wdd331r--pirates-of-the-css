@@ -9,7 +9,7 @@ html {
     --secondary-clr: #4DA167;
     --accent-clr: #E4C3AD;
     
-    --link-clr: color-mix(in srgb, var(--text-clr), var(--primary-clr) 50%) ;
+    --link-clr: color-mix(in srgb, var(--text-clr), var(--secondary-clr) 50%) ;
     --link-hover-clr: color-mix(in srgb, var(--link-clr), black 20%);
     
     --border-clr: var(--text-clr);
@@ -43,7 +43,7 @@ html {
         --secondary-clr: color-mix(in srgb, #4DA167, black 20%);
         --accent-clr: #E4C3AD;
         
-        --link-clr: color-mix(in srgb, var(--text-clr), var(--primary-clr) 50%);
+        --link-clr: color-mix(in srgb, var(--text-clr), var(--secondary-clr) 50%);
         --link-hover-clr: color-mix(in srgb, var(--link-clr), white 20%);
         
         --border-clr: var(--text-clr);
@@ -78,7 +78,7 @@ html {
             --secondary-clr: color-mix(in srgb, #4DA167, black 20%);
             --accent-clr: #E4C3AD;
             
-            --link-clr: var(--heading-clr);
+            --link-clr: color-mix(in srgb, var(--text-clr), var(--secondary-clr) 50%);
             --link-hover-clr: color-mix(in srgb, var(--link-clr), white 20%);
             
             --border-clr: var(--text-clr);
