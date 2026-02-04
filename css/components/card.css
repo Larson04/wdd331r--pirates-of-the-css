@@ -7,3 +7,26 @@
  * - Image handling
  * - Hover effects
  */
+
+.card {
+  width: 60%;
+  background-color: var(--accent-clr);
+  border-radius: 5px;
+  padding: var(--spacing-sm);
+  margin: var(--spacing-med) auto;
+  .card__image {
+    width: 75%;
+    margin: var(--spacing-sm) auto;
+    box-shadow: 5px 5px 15px 5px #888888;
+    border-radius: 5px;
+  }
+  .card__content {
+    text-align: center;
+    .card__title {
+      font-size: var(--font-size-lg);
+    }
+    .card__text {
+      font-size: var(--font-size-med);
+    }
+  }
+}
