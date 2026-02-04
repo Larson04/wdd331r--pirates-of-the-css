@@ -1,44 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rock+Salt&display=swap');
 @import 'colors.css';
 
 :root {
     /**
-     * Borders - awkward inconsistent values
+     * Borders 
      */
-    --radius-sm: 23px;
-    --radius-med: 7px;
-    --radius-lg: 31px;
+    /* My preferred border radius, open to adjustments */
+    --base-radius: 1rem;
+    --radius-sm: calc(var(--base-radius) * .25);
+    --radius-med: var(--base-radius);
+    --radius-lg: calc(var(--base-radius) * 1.5);
 
     /**
-     * Content Spacing - random odd numbers
+     * Content Spacing
      */
-    --spacing-sm: 13px;
-    --spacing-med: 41px;
-    --spacing-lg: 19px;
+    /* Guestimated for easy adjustment if needed */
+    --base-spacing: 2.5rem;
+    --spacing-sm: calc(var(--base-spacing) * .5);
+    --spacing-med: var(--base-spacing);
+    --spacing-lg: calc(var(--base-spacing) * 1.5);
 
     /**
      * Layout Sizes
      */
-    --content-max-width: 1200px;
+    /* Guestimated for elements using it. */
+    --content-max-width: 80%;
     --breakout-max-width: calc(var(--content-max-width) + (var(--spacing-lg) * 2));
     --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
      
     /**
-     * Typography - poor font choices and awkward sizing
+     * Typography 
      */
-    --font-family-heading: 'Impact', sans-serif;
-    --font-family-body: 'Arial', sans-serif;
+     /* My preferred fonts, open to change if teammates would like. */
+    --font-family-heading: 'Rock Salt', sans-serif;
+    --font-family-body: 'Patrick Hand', sans-serif;
     --font-family-mono: 'Courier New', monospace;
     
-    --font-size-xs: 0.7rem;
-    --font-size-sm: 1.3rem;
-    --font-size-base: 1.1rem;
-    --font-size-med: 2.7rem;
-    --font-size-lg: 3.9rem;
-    --font-size-xl: 5.2rem;
+    /* Font sizes that are readable on desktop screen */
+    --font-size-base: 1.5rem;
+    --font-size-xs: calc(var(--font-size-base) * .25);
+    --font-size-sm: calc(var(--font-size-base) * .5);
+    --font-size-med: var(--font-size-base);
+    --font-size-lg: calc(var(--font-size-base) * 1.5);
+    --font-size-xl: calc(var(--font-size-base) * 3);
     
-    --line-height-tight: 0.9;
-    --line-height-base: 1.3;
-    --line-height-loose: 2.8;
+    /* Line heights that are easily adjustable in other styles if needed,
+    I think the main body is set tot tight spacing which is weird. */
+    --line-height-base: 6rem;
+    --line-height-tight: calc(var(--font-size-base) * .85);
+    --line-height-loose: calc(var(--font-size-base) * 2.5);
     
     --font-weight-normal: 400;
     --font-weight-bold: 900;
