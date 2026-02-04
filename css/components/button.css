@@ -18,6 +18,7 @@
   background-color: var(--button-bg-clr);
   &:hover, &:focus {
     --button-bg-clr: var(--button-hover-bg-clr);
+    --button-text-clr: white;
   }
   &:active {
     border-left: 2px solid var(--primary-clr);
