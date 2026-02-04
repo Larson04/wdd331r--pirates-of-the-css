@@ -7,3 +7,36 @@
  * - Hover, focus, and active states
  * - Accessibility (focus indicators)
  */
+
+:is(button, .button) {
+  border: none;
+  border-radius: var(--spacing-med);
+  text-decoration: none;
+  padding: var(--spacing-sm);
+  margin: var(--spacing-sm);
+  color: var(--button-text-clr);
+  background-color: var(--button-bg-clr);
+  &:hover, &:focus {
+    --button-bg-clr: var(--button-hover-bg-clr);
+  }
+  &:active {
+    border-left: 2px solid var(--primary-clr);
+  }
+}
+
+.theme-toggle {
+  --button-bg-clr: var(--bg-clr);
+  &:hover, &:focus {
+    --button-bg-clr: color-mix(in oklch, var(--bg-clr) 85%, black);
+  }
+}
+
+.button {
+  --button-text-clr: color-mix(in srgb, var(--button-text-clr) 20%, white);
+  &[data-variant="secondary"] {
+    --button-bg-clr: color-mix(in oklch, var(--primary-clr) 50%, var(--secondary-clr));
+    &:hover, &:focus {
+      --button-bg-clr: color-mix(in oklch, color-mix(in oklch, var(--primary-clr) 50%, var(--secondary-clr)) 80%, black);
+    }
+  }
+}
