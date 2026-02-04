@@ -30,7 +30,7 @@ FORM COMPONENTS
         box-sizing: inherit;
     }
 
-    /* INPUTS */
+    /* INPUTS (w/ field, textarea, select) */
     :is(input, textarea, select, button) {
         display: block;
         width: 100%;
