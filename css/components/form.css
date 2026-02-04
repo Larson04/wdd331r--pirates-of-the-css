@@ -18,15 +18,16 @@ FORM COMPONENTS
 @import 'base/colors.css';
 
 .contact-form {
-    margin: 0 auto;
     display: block;
     box-sizing: border-box;
+    margin: 0 auto;
     padding: clamp(calc(var(--spacing-sm) * 0.7), var(--spacing-sm), calc(var(--spacing-sm) * 1.3));;
-    color: var(--text-clr);
-    max-width: var(--content-max-width);
-    font-size: var(--font-size-lg);
     width: 100%;
-
+    
+    max-width: var(--content-max-width);
+    color: var(--text-clr);
+    font-size: var(--font-size-lg);
+    
     /* INPUTS (w/ field, textarea, select) */
     :is(input, textarea, select, button) {
         display: block;
