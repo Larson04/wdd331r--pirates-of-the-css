@@ -9,11 +9,9 @@
  */
 
 .card {
-  width: 60%;
   background-color: var(--accent-clr);
   border-radius: 5px;
   padding: var(--spacing-sm);
-  margin: var(--spacing-med) auto;
   .card__image {
     width: 75%;
     margin: var(--spacing-sm) auto;
@@ -27,6 +25,7 @@
     }
     .card__text {
       font-size: var(--font-size-med);
+      text-align: center;
     }
   }
 }
