@@ -6,15 +6,10 @@
 .footer {
     background-color: var(--clr-surface);
     border-top: 1px solid var(--clr-border);
-    padding-block: var(--space-6);
     color: var(--clr-text);
 }
 
 .footer__section {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-    padding-bottom: 2%;
     text-decoration: none;
 }
 
@@ -22,7 +17,6 @@
     font-size: var(--fs-lg);
     font-weight: 700;
     color: var(--clr-text);
-    padding: 2%;
 }
 
 .footer__subtitle {
@@ -41,9 +35,6 @@
     list-style: armenian;
     padding: auto;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
     text-decoration: underline;
 }
 
@@ -61,8 +52,6 @@
 }
 
 .footer__bottom {
-    margin-top: auto;
-    padding-top: var(--space-3);
     border-top: 1px solid var(--clr-border);
     text-align: center;
     font-size: var(--fs-sm);

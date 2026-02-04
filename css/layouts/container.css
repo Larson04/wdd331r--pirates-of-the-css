@@ -16,7 +16,8 @@ body {
     display: grid;
     grid-template-columns: 90% 10%;
     margin-top: 25px;
-
+    padding: 10px;
+    margin-bottom: 25px;
 }
 
 .header__branding {
@@ -24,7 +25,9 @@ body {
     grid-row: 1 / 2;
 }
 .header__logo {
-    text-align: left
+    text-align: left;
+    display: inline-block;
+    padding: 10px; /*Replace with Variable*/
 }
 
 .nav {
@@ -44,8 +47,17 @@ body {
     justify-content: space-evenly;
 }
 
+.nav__link {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 200px;
+}
+
 .nav__item {
-    padding: 15px;
+    padding: 0px;
     margin-left: auto;
     margin-right: auto;
+    height: 30px;
 }

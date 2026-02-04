@@ -11,12 +11,9 @@
 /* Styles the site navigation menu */
 /* NAVIGATION COMPONENT */
 .nav {
-    display: flex;
-    align-items: center;
 
     & .nav__list {
         list-style: none;
-        display: flex;
         gap: var(--spacing-med);
         margin: 0;
         padding: 0;
@@ -39,14 +36,6 @@
         &[data-active] {
             font-weight: var(--font-bold);
             border-bottom: 2px solid var(--primary-clr);
-        }
-    }
-
-    /* Mobile */
-    @media (max-width: 768px) {
-        & .nav__list {
-            flex-direction: row;
-            align-items: flex-start;
         }
     }
 }

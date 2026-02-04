@@ -8,6 +8,12 @@
  * - Provides consistent gaps
  */
 
+ .features .grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
  .footer .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
