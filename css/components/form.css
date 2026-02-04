@@ -18,6 +18,7 @@ FORM COMPONENTS
 @import 'base/colors.css';
 
 .contact-form {
+    margin: 0 auto;
     display: block;
     box-sizing: border-box;
     padding: clamp(calc(var(--spacing-sm) * 0.7), var(--spacing-sm), calc(var(--spacing-sm) * 1.3));;
