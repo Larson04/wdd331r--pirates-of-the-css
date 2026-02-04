@@ -42,8 +42,8 @@ FORM COMPONENTS
 
         option {
             font-family: var(--font-family-body);
-            color: black;
-            background-color: transparent;
+            color: var(--txt-clr);
+            background-color: var(--bg-clr);
 
             &:focus {
                 color: var(--text-clr);
