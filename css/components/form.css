@@ -38,6 +38,7 @@ FORM COMPONENTS
         background-color: transparent;
         color: var(--text-clr);
         font-size: var(--font-size-lg);
+        border: 2px solid var(--primary-clr);
         border-radius: 10px;
 
         option {
@@ -52,7 +53,7 @@ FORM COMPONENTS
 
         /* Error state */
         &:required:user-invalid { /* For required fields, only if not able to send */
-            border: 1px solid red;
+            border: 2px solid red;
         }
         
         /* Focus indicator */
