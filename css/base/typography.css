@@ -1,9 +1,5 @@
 /* Typography (base layer) */
 
-:where(p) {
-  max-width: 65ch;
-}
-
 :where(p + p) {
   margin-top: var(--spacing-sm);
 }

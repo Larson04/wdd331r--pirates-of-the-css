@@ -7,3 +7,18 @@
  * - Image handling
  * - Hover effects
  */
+.card {
+  border-radius: var(--radius-med);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__content {
+  padding: var(--spacing-sm);
+  flex-grow: 1;
+}
+
+.card__text {
+    line-height: 1.5;
+}

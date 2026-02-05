@@ -6,22 +6,46 @@
  * - Provides consistent spacing between elements
  * - Uses logical properties
  */
-:root {
-   --vertical-margin: 25;
-   --card-width: 300;
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
 }
 
- .stack {
-    margin-top: 25px;
-    margin-bottom: 25px;
- }
-
-.card {
-   margin-top: calc(var(--vertical-margin) * 1px);
-   margin-bottom: calc(var(--vertical-margin) * 1px);
-   max-width: calc(var(--card-width) * 1px);
+h1, h2, h3, h4, h5, h6 {
+   letter-spacing: 0.05em;
 }
 
-.card__image {
-   width: calc(var(--card-width) * 1px);
+h1 {
+      line-height: 6rem;
+}
+
+h2, h3, h4 {
+   line-height: 3rem;
+}
+
+.stack > p {
+   width: 100%;
+   margin: 0 auto;
+}
+
+.content-block {
+    width: 100%;
+}
+
+.services p, 
+.services li {
+    line-height: 1.6; 
+    margin-bottom: var(--spacing-sm);
+}
+
+.service-item__features {
+    list-style-type: "→ "; 
+    padding-left: var(--spacing-med);
+    margin-block: var(--spacing-med);
+}
+
+.service-item__features li {
+    padding-left: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
 }
