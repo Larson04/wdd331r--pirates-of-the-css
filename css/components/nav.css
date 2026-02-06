@@ -11,12 +11,9 @@
 /* Styles the site navigation menu */
 /* NAVIGATION COMPONENT */
 .nav {
-    display: flex;
-    align-items: center;
 
     & .nav__list {
         list-style: none;
-        display: flex;
         gap: var(--spacing-med);
         margin: 0;
         padding: 0;
@@ -27,7 +24,7 @@
         color: var(--text-clr);
         font-weight: var(--font-medium);
         padding: var(--spacing-sm) var(--spacing-med);
-        border-radius: var(--radius-lg);
+        border-radius: var(--radius-sm);
         transition: background 0.2s ease, color 0.2s ease;
 
         &:hover,
@@ -39,14 +36,6 @@
         &[data-active] {
             font-weight: var(--font-bold);
             border-bottom: 2px solid var(--primary-clr);
-        }
-    }
-
-    /* Mobile */
-    @media (max-width: 768px) {
-        & .nav__list {
-            flex-direction: row;
-            align-items: flex-start;
         }
     }
 }

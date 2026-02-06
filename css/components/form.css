@@ -38,22 +38,11 @@ FORM COMPONENTS
         background-color: transparent;
         color: var(--text-clr);
         font-size: var(--font-size-lg);
-        border: 2px solid var(--primary-clr);
         border-radius: 10px;
-
-        option {
-            font-family: var(--font-family-body);
-            color: var(--txt-clr);
-            background-color: var(--bg-clr);
-
-            &:focus {
-                color: var(--text-clr);
-            }
-        }
 
         /* Error state */
         &:required:user-invalid { /* For required fields, only if not able to send */
-            border: 2px solid red;
+            border: 1px solid red;
         }
         
         /* Focus indicator */
@@ -75,16 +64,6 @@ FORM COMPONENTS
     .button {
         margin-top: var(--spacing-med);
         font-size: var(--font-size-lg);
-
         font-weight: bold;
-        background-color: var(--primary-clr);
-        color: var(--bg-clr);
-        border: none;
-
-        &:hover {
-            outline: 2px solid var(--text-clr);
-            outline-offset: 2px;
-            cursor: pointer;
-        }
     }
 }

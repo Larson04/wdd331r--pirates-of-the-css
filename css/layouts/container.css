@@ -7,3 +7,14 @@
  * - Provides consistent padding
  * - Works responsively
  */
+
+.container {
+    max-width: 80%;
+    margin-inline: auto;
+    padding-inline: var(--spacing-med);
+}
+
+section {
+  padding-block: var(--spacing-lg);
+}
+

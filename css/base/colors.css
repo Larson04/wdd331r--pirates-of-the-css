@@ -20,7 +20,7 @@ html {
     --footer-bg-clr: var(--heading-clr);
     --footer-text-clr: var(--text-clr);
     
-    --button-bg-clr: var(--secondary-clr);
+    --button-bg-clr: var(--primary-clr);
     --button-text-clr: var(--text-clr);
     --button-hover-bg-clr: color-mix(in srgb, var(--button-bg-clr), black 20%);
     
@@ -60,9 +60,6 @@ html {
         
         --card-bg-clr: var(--secondary-clr);
         --card-border-clr: var(--text-clr);
-        & .dark {
-            display: block;
-        }
 
         & .light {
             display: none;

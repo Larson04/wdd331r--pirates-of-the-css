@@ -1,10 +1,5 @@
 /* Typography (base layer) */
 
-:where(p) {
-  max-width: 65ch;
-  line-height: 1.5;
-}
-
 :where(p + p) {
   margin-top: var(--spacing-sm);
 }
@@ -64,10 +59,6 @@
   margin-bottom: 0;
 }
 
-:where(li) {
-  line-height: 1.5;
-}
-
 :where(li + li) {
   margin-top: var(--spacing-sm);
 }
@@ -98,7 +89,7 @@
   border: 1px solid var(--border-clr);
   background: color-mix(in srgb, var(--bg-clr), var(--text-clr) 6%);
   overflow-x: auto;
-  line-height: 1.4;
+  line-height: var(--line-height-base);
 
   & code {
     padding: 0;
@@ -110,7 +101,7 @@
 :where(.lead),
 :where(.hero__subtitle) {
   font-size: var(--font-size-sm);
-  line-height: 1.6;
+  line-height: var(--line-height-loose);
   margin-top: var(--spacing-sm);
   max-width: 70ch;
 }
