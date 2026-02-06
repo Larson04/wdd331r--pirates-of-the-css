@@ -37,11 +37,11 @@ html {
         /* Color Scheme agreed upon by team applied to the site */
         --bg-clr: #383434;
         --text-clr: #feefe3;
-        --heading-clr: #BB7E5D;
+        --heading-clr: color-mix(in srgb, #BB7E5D, black 20%);
         
         --primary-clr: color-mix(in srgb, #6295e1, black 10%);
         --secondary-clr: color-mix(in srgb, #4DA167, black 20%);
-        --accent-clr: #E4C3AD;
+        --accent-clr: color-mix(in srgb, #E4C3AD, black 20%);
         
         --link-clr: color-mix(in srgb, var(--text-clr), var(--secondary-clr) 50%);
         --link-hover-clr: color-mix(in srgb, var(--link-clr), white 20%);
